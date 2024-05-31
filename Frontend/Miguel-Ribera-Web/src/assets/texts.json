@@ -1,0 +1,334 @@
+{
+  "topBar": {
+    "english": {
+      "home": "Home",
+      "schedule": "Schedule",
+      "privateService": "Private Service",
+      "aboutUs": "About Us",
+      "login": "Login",
+      "language": "Language",
+      "userManagement": "Users Management"
+    },
+    "spanish": {
+      "home": "Inicio",
+      "schedule": "Horario",
+      "privateService": "Servicio privado",
+      "aboutUs": "Sobre Nosotros",
+      "login": "Iniciar Sesión",
+      "language": "Idioma",
+      "userManagement": "Gestión Usuarios"
+    },
+    "catalan": {
+      "home": "Inici",
+      "schedule": "Horari",
+      "privateService": "Servei privat",
+      "aboutUs": "Sobre Nosaltres",
+      "login": "Iniciar Sessió",
+      "language": "Idioma",
+      "userManagement": "Gestió Usuaris"
+    }
+  },
+  "nextBus": {
+    "english": {
+      "title": "Next Bus",
+      "selectStation": "Choose your station:",
+      "selectTime": "Time at which you want to get on the bus:",
+      "selectAnOption": "Select an option",
+      "searchButton": "Search"
+    },
+    "spanish": {
+      "title": "Próximos autobuses",
+      "selectStation": "Escoge en que parada buscas subir:",
+      "selectTime": "A que hora quieres subir al autobus:",
+      "selectAnOption": "Selecciona una opción",
+      "searchButton": "Buscar"
+    },
+    "catalan": {
+      "title": "Pròxims autobusos",
+      "selectStation": "Escull en quina parada vols pujar:",
+      "selectTime": "A quina hora vols pujar a l'autobús:",
+      "selectAnOption": "Selecciona una opció",
+      "searchButton": "Buscar"
+    }
+  },
+  "privateService": {
+    "english": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "days": "How many days you want the bus?",
+      "description": "Description of the service that you want",
+      "send": "Send"
+    },
+    "spanish": {
+      "fullName": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "phoneNumber": "Número de Teléfono",
+      "days": "¿Cuántos días necesitaras los servicios?",
+      "description": "Describe el servicio que quieres",
+      "send": "Enviar"
+    },
+    "catalan": {
+      "fullName": "Nom Complet",
+      "email": "Correu Electrònic",
+      "phoneNumber": "Número de Telèfon",
+      "days": "Quants dies necessitaràs els serveis?",
+      "description": "Descriu el servei que desitges",
+      "send": "Enviar"
+    }
+  },
+  "aboutUs": {
+    "english": {
+      "title": "Welcome to Miguel Ribera Autocares!",
+      "p1": "MIGUEL RIBERA AUTOCARES S.L. is a transportation company founded by Miguel Ribera Navarro and Concepción Torres Bertomeu in the early 1930s. Initially, the company operated with a single bus that ran an urban route in the city of Cullera, covering the journey between the station, the Lighthouse, Marenys, and Sueca. This modest beginning laid the foundation for what would eventually become a transportation company renowned for its quality and reliability.",
+      "p2": "As the demand for transportation services grew, the company acquired a second bus, which allowed it to expand its operations to charter services. In 1987, the entity was constituted as a sole proprietorship under the name Miguel Ribera Torres. Ten years later, in 1997, it was transformed into the current Limited Liability Company, reflecting its growth and consolidation in the sector.",
+      "p3": "Today, MIGUEL RIBERA AUTOCARES S.L. has a fleet of 18 coaches, divided between urban and charter services. Six of these vehicles are dedicated to urban transportation, all adapted to ensure accessibility, and cover the route Station - Beach - Lighthouse - Mareny. The remaining 12 coaches are allocated to charter services, which include:",
+      "l1": "School transportation, ensuring the punctuality and safety of students.",
+      "l2": "Staff transportation for companies, facilitating worker mobility.",
+      "l3": "Organization of trips for bachelor and bachelorette parties, offering a safe and fun experience.",
+      "l4": "Charter services contracted by travel agencies and individuals, both nationally and internationally, adapting to the specific needs of each client.",
+      "p4": "All vehicles of MIGUEL RIBERA AUTOCARES S.L. comply with the strictest quality and safety standards, aiming to provide peace of mind and protection to its customers. The company stands out not only for the quality of its fleet but also for its human resources. The company’s staff boasts a high level of professionalism and experience, both in technical aspects and in passenger service, ensuring excellence in service.",
+      "p5": "The company remains committed to continuous improvement, investing in technology and training to maintain its high service standards and continue being a benchmark in the passenger transport sector. The combination of a modern fleet and a highly skilled team ensures that MIGUEL RIBERA AUTOCARES S.L. can offer safe, comfortable, and reliable transportation solutions, tailored to the needs of its clients."
+    },
+    "spanish": {
+      "title": "¡Bienvenido a Miguel Ribera Autocares!",
+      "p1": "MIGUEL RIBERA AUTOCARES S.L. es una empresa de transporte fundada por Miguel Ribera Navarro y Concepción Torres Bertomeu a principios de los años 30. En sus inicios, la compañía contaba con un único autobús que operaba una línea urbana en la ciudad de Cullera, cubriendo el trayecto entre la estación, el Faro, Marenys y Sueca. Este modesto comienzo sentó las bases de lo que con el tiempo se convertiría en una empresa de transporte reconocida por su calidad y fiabilidad.",
+      "p2": "A medida que la demanda de servicios de transporte creció, la empresa adquirió un segundo autobús, lo que permitió expandir sus operaciones al transporte discrecional. En 1987, la entidad se constituyó cómo persona física bajo el nombre de Miguel Ribera Torres. Diez años más tarde, en 1997, se transformó en la actual Sociedad Limitada, reflejando su crecimiento y consolidación en el sector.",
+      "p3": "En la actualidad, MIGUEL RIBERA AUTOCARES S.L. cuenta con una flota de 18 autocares, distribuidos entre servicios urbanos y discrecionales. Seis de estos vehículos están dedicados al transporte urbano, todos ellos adaptados para garantizar la accesibilidad, y cubren la ruta Estación - Playa - Faro - Mareny. Los 12 autocares restantes se destinan a servicios discrecionales, entre los que se incluyen:",
+      "l1": "Transporte escolar, asegurando la puntualidad y seguridad de los estudiantes.",
+      "l2": "Transporte de personal a empresas, facilitando la movilidad de los trabajadores.",
+      "l3": "Organización de viajes para despedidas de soltero y soltera, ofreciendo una experiencia segura y divertida.",
+      "l4": "Servicios discrecionales contratados por agencias de viajes y particulares, tanto a nivel nacional cómo internacional, adaptándose a las necesidades específicas de cada cliente.",
+      "p4": "Todos los vehículos de MIGUEL RIBERA AUTOCARES S.L. cumplen con las más estrictas normas de calidad y seguridad, con el objetivo de proporcionar tranquilidad y protección a sus clientes. La empresa no solo se destaca por la calidad de su flota, sino también por su equipo humano. El personal de la compañía cuenta con un alto grado de profesionalidad y experiencia, tanto en aspectos técnicos cómo en la atención al pasajero, lo que garantiza un servicio de excelencia.",
+      "p5": "La empresa sigue comprometida con la mejora continua, invirtiendo en tecnología y formación para mantener sus altos estándares de servicio y seguir siendo un referente en el sector del transporte de pasajeros. La combinación de una flota moderna y un equipo altamente capacitado asegura que MIGUEL RIBERA AUTOCARES S.L. pueda ofrecer soluciones de transporte seguras, cómodas y fiables, adaptadas a las necesidades de sus clientes."
+    },
+    "catalan": {
+      "title": "Benvingut a Miguel Ribera Autocares!",
+      "p1": "MIGUEL RIBERA AUTOCARES S.L. és una empresa de transport fundada per Miguel Ribera Navarro i Concepción Torres Bertomeu a principis dels anys 30. En els seus inicis, la companyia comptava amb un únic autobús que operava una línia urbana a la ciutat de Cullera, cobrint el trajecte entre l'estació, el Far, Marenys i Sueca. Aquest modest començament va sentar les bases de la que amb el temps es convertiria en una empresa de transport reconeguda per la seva qualitat i fiabilitat.",
+      "p2": "A mesura que la demanda de serveis de transport va créixer, l'empresa va adquirir un segon autobús, el que va permetre expandir les seves operacions al transport discrecional. El 1987, l'entitat es va constituir com a persona física sota el nom de Miguel Ribera Torres. Deu anys més tard, el 1997, es va transformar en l'actual Societat Limitada, reflectint el seu creixement i consolidació en el sector.",
+      "p3": "En l'actualitat, MIGUEL RIBERA AUTOCARES S.L. compta amb una flota de 18 autocars, distribuïts entre serveis urbans i discrecionals. Sis d'aquests vehicles estan dedicats al transport urbà, tots ells adaptats per garantir l'accessibilitat, i cobreixen la ruta Estació - Platja - Far - Mareny. Els 12 autocars restants es destinen a serveis discrecionals, entre els quals s'inclouen:",
+      "l1": "Transport escolar, assegurant la puntualitat i seguretat dels estudiants.",
+      "l2": "Transport de personal a empreses, facilitant la mobilitat dels treballadors.",
+      "l3": "Organització de viatges per a despedides de solter i soltera, oferint una experiència segura i divertida.",
+      "l4": "Serveis discrecionals contractats per agències de viatges i particulars, tant a nivell nacional com internacional, adaptant-se a les necessitats específiques de cada client.",
+      "p4": "Tots els vehicles de MIGUEL RIBERA AUTOCARES S.L. compleixen amb les més estrictes normes de qualitat i seguretat, amb l'objectiu de proporcionar tranquil·litat i protecció als seus clients. L'empresa no només es destaca per la qualitat de la seva flota, sinó també pel seu equip humà. El personal de la companyia compta amb un alt grau de professionalitat i experiència, tant en aspectes tècnics com en l'atenció al passatger, la qual cosa garanteix un servei d'excel·lència.",
+      "p5": "L'empresa segueix compromesa amb la millora contínua, invertint en tecnologia i formació per mantenir els seus alts estàndards de servei i seguir sent un referent en el sector del transport de passatgers. La combinació d'una flota moderna i un equip altament capacitats assegura que MIGUEL RIBERA AUTOCARES S.L. pugui oferir solucions de transport segures, còmodes i fiables, adaptades a les necessitats dels seus clients."
+    }
+  },
+  "login": {
+    "english": {
+      "title": "Log In",
+      "email": "Email",
+      "password": "Password",
+      "logIn": "Log In",
+      "signIn": "Sign In",
+      "loginError": "The Email or the password are incorrect"
+    },
+    "spanish": {
+      "title": "Iniciar Sesión",
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "logIn": "Iniciar sesión",
+      "signIn": "Crear cuenta",
+      "loginError": "El correo o la contraseña son incorrectos"
+    },
+    "catalan": {
+      "title": "Iniciar sessió",
+      "email": "Correu Electrònic",
+      "password": "Contrasenya",
+      "logIn": "Iniciar sessió",
+      "signIn": "Crear conter",
+      "loginError": "El correu o la contrasenya son incorrectes"
+    }
+  },
+  "register": {
+    "english": {
+      "title": "Sign In",
+      "email": "Email",
+      "dni": "DNI",
+      "password": "Password",
+      "repeatPassword": "Repeat Password",
+      "logIn": "Log In",
+      "signIn": "Sign In",
+      "notValidEmail": "The Email is not valid",
+      "notValidDni": "The DNI is not Valid",
+      "notValidPassword": "The Password must contain a UpperCase, a LowerCase and a number and must have at least 8 characters",
+      "notValidRepeatedPassword": "The Password's must be the same"
+    },
+    "spanish": {
+      "title": "Crear cuenta",
+      "email": "Correo Electrónico",
+      "dni": "DNI",
+      "password": "Contraseña",
+      "repeatPassword": "Repetir Contraseña",
+      "logIn": "Iniciar sesión",
+      "signIn": "Crear cuenta",
+      "notValidEmail": "El correo no es valido",
+      "notValidDni": "El DNI no es valido",
+      "notValidPassword": "La contraseña debe contener al menos 8 caracteres y cómo mínimo una mayúscula, una minúscula y un número",
+      "notValidRepeatedPassword": "Las contraseñas deben ser iguales"
+    },
+    "catalan": {
+      "title": "Crear conter",
+      "email": "Correu Electrònic",
+      "dni": "DNI",
+      "password": "Contrasenya",
+      "repeatPassword": "Repetir Contrasenya",
+      "logIn": "Iniciar sessió",
+      "signIn": "Crear conter",
+      "notValidEmail": "El correu no es valid",
+      "notValidDni": "El DNI no es valid",
+      "notValidPassword": "La contrasenya ha de contindre al menys 8 caràcters i com a minim una majúscula, una minúscula i un número ",
+      "notValidRepeatedPassword": "Les contrasenyes deuen ser iguals"
+    }
+  },
+  "profile": {
+    "english": {
+      "title": "User information",
+      "email": "Email",
+      "dni": "DNI",
+      "trips": "Remaining trips",
+      "userQR": "User QR",
+      "logOut": "Log Out",
+      "deleteAccount": "Delete Account",
+      "dialogLogOutTitle": "Are you sure you want to log out?",
+      "dialogDeleteAccountTitle": "Are you sure you want to delete your account? This action can't be undone",
+      "accept": "Yes",
+      "deny": "No"
+    },
+    "spanish": {
+      "title": "Información del usuario",
+      "email": "Correo Electrónico",
+      "dni": "DNI",
+      "trips": "Viajes restantes",
+      "userQR": "QR Usuario",
+      "logOut": "Cerrar Sesión",
+      "deleteAccount": "Borrar Cuenta",
+      "dialogLogOutTitle": "¿Estas seguro de que quieres cerrar sesión?",
+      "dialogDeleteAccountTitle": "¿Estas seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer",
+      "accept": "Sí",
+      "deny": "No"
+    },
+    "catalan": {
+      "title": "Informació de l'usuari",
+      "email": "Correu Electrònic",
+      "dni": "DNI",
+      "trips": "Viatges restants",
+      "userQR": "Usuari QR",
+      "logOut": "Tancar Sessió",
+      "deleteAccount": "Borrar Conte",
+      "dialogLogOutTitle": "Estas segur de que vols tancar sessió?",
+      "dialogDeleteAccountTitle": "Estas segur de que vols eliminar el teu conter? Esta acció no es pot desfer",
+      "accept": "Sí",
+      "deny": "No"
+    }
+  },
+  "payOptions": {
+    "english": {
+      "title": "Buy your ticket",
+      "individual": "Individual Ticket",
+      "bono": "Bono",
+      "saving": "This bono includes 20 trips (8€ of saving)",
+      "price": "Price",
+      "payMethod": "Pay method",
+      "cardNumber": "Card Number",
+      "ownerName": "Card Owner",
+      "expirationDate": "Expiration date of the card",
+      "secureCode": "Security Code",
+      "buy": "Buy"
+    },
+    "spanish": {
+      "title": "Compra tu billete",
+      "individual": "Billete individual",
+      "bono": "Bono",
+      "saving": "Este bono incluye 20 viajes (8€ de ahorro)",
+      "price": "Precio",
+      "payMethod": "Método de pago",
+      "cardNumber": "Número de Tarjeta",
+      "ownerName": "Nombre del titular de la tarjeta",
+      "expirationDate": "Fecha de expiración de la tarjeta",
+      "secureCode": "Código de Seguridad",
+      "buy": "Comprar"
+    },
+    "catalan": {
+      "title": "Compra el teu bitllet",
+      "individual": "Bitllet individual",
+      "bono": "Bono",
+      "saving": "Aquest bono inclou 20 viajes (8€ de ahorro)",
+      "price": "Preu",
+      "payMethod": "Mètode de pagament",
+      "cardNumber": "Número de targeta",
+      "ownerName": "Títol del titular de la targeta",
+      "expirationDate": "Data de caducitat de la targeta",
+      "secureCode": "Codi de seguretat",
+      "buy": "Comprar"
+    }
+  },
+  "nextBusDialog": {
+    "english": {
+      "title": "Next bus in",
+      "time": "minute/s",
+      "button": "Buy ticket"
+    },
+    "spanish": {
+      "title": "Siguiente autobús en",
+      "time": "minuto/s",
+      "button": "Comprar billete"
+    },
+    "catalan": {
+      "title": "Següent autobus en",
+      "time": "minut/s",
+      "button": "Comprar billet"
+    }
+  },
+
+  "checkTicket": {
+    "english": {
+      "checkingTicket": "Checking ticket",
+      "correct": "Ticket correct",
+      "error": "Error in the ticket",
+      "unauthorizedTitle": "User unauthorized",
+      "redirect": "Go to Home page"
+    },
+    "spanish": {
+      "checkingTicket": "Comprobando billete",
+      "correct": "Billete correcto",
+      "error": "Error en el billete",
+      "unauthorizedTitle": "Usuario no autorizado",
+      "redirect": "Ir a la página de Inicio"
+    },
+    "catalan": {
+      "checkingTicket": "Comprovant billet",
+      "correct": "Billet correcte",
+      "error": "Error en el billet",
+      "unauthorizedTitle": "Usuari no autorizad",
+      "redirect": "Anar a la página de Inici"
+    }
+  },
+
+  "unauthorized": {
+    "english": {
+      "unauthorizedTitle": "User unauthorized",
+      "redirect": "Go to Home page"
+    },
+    "spanish": {
+      "unauthorizedTitle": "Usuario no autorizado",
+      "redirect": "Ir a la página de Inicio"
+    },
+    "catalan": {
+      "unauthorizedTitle": "Usuari no autorizad",
+      "redirect": "Anar a la página de Inici"
+    }
+  },
+  "notFound": {
+    "english": { "notFound": "Page not found", "redirect": "Go to Home page" },
+    "spanish": {
+      "notFound": "Página no encontrada",
+      "redirect": "Ir a la página de Inicio"
+    },
+    "catalan": {
+      "notFound": "Página no trobada",
+      "redirect": "Anar a la página de Inici"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<main class="grid place-content-center" style="height: 85vh">
+@if (haveAccount) {
+    <app-login (haveAccount)="changeHaveAccount($event)" class="login"/>
+  } @else{
+    <app-register (haveAccount)="changeHaveAccount($event)" class="register"/>
+  }
+</main>
+
+

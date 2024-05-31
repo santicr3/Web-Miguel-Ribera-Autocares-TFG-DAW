@@ -1,0 +1,24 @@
+<nav class="w-full z-40" style="height: 15vh">
+  <div class="flex items-center p-5 bg-slate-900 h-full">
+    <a href="/"><img src="../../assets/logo.png" alt="" width="50" height="50" /></a>
+    <ul
+      class="hidden lg:flex justify-between ms-10 w-full text-white text-lg"
+      style="list-style: none"
+    >
+        <app-menu display="flex justify-between" class="w-full"/>
+    </ul>
+
+    <div
+      class="flex items-center justify-end w-full lg:hidden text-4xl"
+    >
+      <span
+        class="bi bi-{{ this.icon }} text-white cursor-pointer"
+        (click)="this.changeMenu()"
+      ></span>
+    </div>
+  </div>
+
+  <div class="{{this.dropdownMenuDisplay}} lg:hidden bg-white gap-5 absolute w-full list-none z-40">
+    <app-menu display="block" itemClasses="p-3 border hover:bg-gray-300 bg-white" (closeMenu)="changeMenu()" />
+  </div>  
+</nav>

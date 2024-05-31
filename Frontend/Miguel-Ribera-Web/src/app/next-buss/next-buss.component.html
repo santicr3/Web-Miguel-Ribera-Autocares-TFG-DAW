@@ -1,0 +1,33 @@
+<div
+  class="flex flex-col border p-10 rounded-xl shadow-xl justify-around gap-5" 
+  style="min-height: 75vh;"
+>
+  <h2 class="text-5xl">{{ this.texts?.title }}</h2>
+  <div>
+    <h5 class="text-2xl mb-4">{{ this.texts?.selectStation }}</h5>
+
+    <div class="border rounded flex">
+      <ng-select
+        [items]="this.stationsName"
+        [(ngModel)]="station"
+        [searchable]="true"
+        placeholder="{{ this.texts?.selectAnOption }}"
+        (change)="setSelectedStation()"
+        class="w-3/4 p-2 relative z-10"
+      ></ng-select>
+
+      <button
+        class="btn bi bi-geo-alt w-1/4 text-white rounded-r"
+        style="font-size: 30px; background: #333"
+        (click)="getLocation()"
+      ></button>
+    </div>
+  </div>
+  <div>
+    <h5 class="text-2xl mb-4">{{ this.texts?.selectTime }}</h5>
+
+    <input type="time" class="border rounded p-5 w-full text-xl" />
+  </div>
+
+  <button class="text-white bg-blue-800 p-5 rounded text-2xl" (click)="this.searchBus()">{{this.texts?.searchButton}}</button>
+</div>

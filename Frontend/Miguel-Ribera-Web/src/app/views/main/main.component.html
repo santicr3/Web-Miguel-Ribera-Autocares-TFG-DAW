@@ -1,0 +1,6 @@
+<app-next-bus-dialog *ngIf="this.showNextBusDialog" (closeDialog)="this.showNextBusDialog = false"/>
+<main class="flex items-center justify-around flex-col lg:flex-row m-5 lg:m-0">
+  <app-next-buss class="w-full m-5 lg:w-1/2 lg:max-h-3/4 z-auto" (showNextBusDialog)="this.showNextBusDialog = true"/>
+
+  <app-map class="w-full lg:w-1/2 h-56 rounded-lg m-5" style="height: auto;"/>
+</main>

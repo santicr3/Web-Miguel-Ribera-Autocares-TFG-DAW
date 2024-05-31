@@ -1,0 +1,2 @@
+<div *ngIf="this.isActive" class="rounded-xl border border-black p-5 text-center cursor-pointer bg-blue-400 text-white">{{this.ticketType}}</div>
+<div *ngIf="!this.isActive" class="rounded-xl border border-black p-5 text-center cursor-pointer" (click)="this.clickHandler()">{{this.ticketType}}</div>

@@ -1,0 +1,123 @@
+<div class="flex justify-center items-center">
+  <div
+   class="flex flex-col-reverse lg:flex-row justify-center items-center w-full px-5 my-5"
+  >
+    <div class="flex justify-center rounded-3xl border shadow">
+      <div class="flex flex-col p-5 gap-5 w-full">
+        <h4 class="text-center text-3xl text-blue-900">{{this.texts?.title}}</h4>
+
+        <div class="flex justify-center items-center text-right gap-1.5">
+          <app-custom-radio-button
+            ticketType="{{this.texts?.individual}}"
+            [isActive]="this.ticketType"
+            (clicked)="this.toggleTicketType()"
+            class="w-full"
+          />
+          <app-custom-radio-button
+            ticketType="{{this.texts?.bono}}"
+            [isActive]="!this.ticketType"
+            (clicked)="this.toggleTicketType()"
+            class="w-full"
+          />
+        </div>
+
+        <p *ngIf="!this.ticketType" class="text-end text-slate-400 italic">
+          {{this.texts?.saving}}
+        </p>
+        <p class="text-end text-lg">{{this.texts?.price}}: {{ this.price }}€</p>
+
+        <p class="text-center text-lg text-red-400"><i>{{errorMessage}}</i></p>
+
+        <h5>{{this.texts?.payMethod}}:</h5>
+        <div class="grid grid-cols-3 w-full rounded-xl justify-around gap-2">
+          <app-pay-option
+            name="Paypal"
+            color="text-white"
+            background="bg-blue-900"
+            class="w-full"
+            [activeMethod]="this.payOption"
+            (clicked)="changePayMethod($event)"
+          />
+          <app-pay-option
+            name="Visa"
+            color="text-white"
+            background="bg-orange-300"
+            class="w-full"
+            [activeMethod]="this.payOption"
+            (clicked)="changePayMethod($event)"
+          />
+          <app-pay-option
+            name="Mastercard"
+            color="text-white"
+            background="bg-red-500"
+            class="w-full"
+            [activeMethod]="this.payOption"
+            (clicked)="changePayMethod($event)"
+          />
+        </div>
+        <div *ngIf="this.payOption !== 'Paypal'">
+          <div class="flex justify-center items-center text-right gap-5">
+            <label for="cardNumber" class="w-1/2">{{this.texts?.cardNumber}}: </label>
+            <input
+              type="text"
+              maxlength="19"
+              placeholder="{{this.texts?.cardNumber}}"
+              class="border-b-2 outline-none focus:border-black p-5 w-1/2 {{errorCode === 1 ? 'border-red-400' : ''}}"
+              [(ngModel)]="this.cardNumber"
+              (change)="cardNumberStyle()"
+              name="cardNumber"
+              required
+            />
+          </div>
+
+          <div class="flex justify-center items-center text-right gap-5">
+            <label for="cardNumber" class="w-1/2"
+              >{{this.texts?.ownerName}}:
+            </label>
+            <input
+              type="text"
+              placeholder="{{this.texts?.ownerName}}"
+              class="border-b-2 outline-none focus:border-black p-5 w-1/2 {{errorCode === 2 ? 'border-red-400' : ''}}"
+              [(ngModel)]="this.cardOwner"
+              name="cardOwner"
+              required
+            />
+          </div>
+
+          <div class="flex justify-center items-center text-right gap-5">
+            <label for="cardNumber" class="w-1/2"
+              >{{this.texts?.expirationDate}}:
+            </label>
+            <input
+              type="month"
+              placeholder=""
+              class="border-b-2 outline-none focus:border-black p-5 w-1/2"
+              [(ngModel)]="this.expirationDate"
+              name="expireDate"
+              required
+            />
+          </div>
+
+          <div class="flex justify-center items-center text-right gap-5">
+            <label for="cardNumber" class="w-1/2">{{this.texts?.secureCode}}: </label>
+            <input
+              type="text"
+              placeholder="CVV"
+              maxlength="3"
+              class="border-b-2 outline-none focus:border-black p-3 w-1/2 {{errorCode === 4 ? 'border-red-400' : ''}}"
+              [(ngModel)]="this.cvv"
+              name="cvv"
+              required
+            />
+          </div>
+        </div>
+        <button
+          class="bg-blue-500 rounded-xl text-white p-5"
+          (click)="validateForm()"
+        >
+        {{this.texts?.buy}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

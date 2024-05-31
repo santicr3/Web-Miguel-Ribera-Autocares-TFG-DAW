@@ -1,0 +1,28 @@
+<div
+  class="fixed w-full h-screen bg-gray-600 opacity-90 top-0 left-0 z-50"
+  (click)="this.close()"
+></div>
+
+<div
+  class="fixed w-full h-screen flex justify-center items-center z-50"
+>
+  <div
+    class="rounded bg-white p-5 border border-black self-center flex flex-col gap-5"
+    style="opacity: 1"
+  >
+    <div class="flex align items-center gap-5">
+      <h5 class="text-xl"> <i class="bi bi-bus-front mr-5"></i>{{ this.texts?.title }}</h5>
+      <button class="bi bi-x text-end text-4xl" (click)="this.close()"></button>
+    </div>
+    <h5 class="text-xl text-center">{{ this.time + this.texts?.time }}: </h5>
+
+    <div class="flex gap-5">
+      <button
+        class="rounded-xl p-5 w-full bg-blue-500 text-white"
+        (click)="this.buyTicket()"
+      >
+        {{ this.texts?.button }}
+      </button>
+    </div>
+  </div>
+</div>

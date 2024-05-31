@@ -1,0 +1,47 @@
+<div class="flex shadow-xl rounded-lg w-fit" (keyup.enter)="checkData(this.email, this.password)">
+  <div class="hidden lg:block icon">
+    <img src="../../../assets/autobus-image.jpg" alt="" class="rounded-l-lg" />
+  </div>
+  <div class="flex flex-col items-center justify-center border gap-10 p-10 rounded-r-lg">
+    <h3 class="text-4xl text-blue-800">{{this.texts?.title}}</h3>
+    <input
+      type="text"
+      placeholder="{{this.texts?.email}}"
+      (change)="this.style = ''"
+      class="border-b-2 outline-none p-5 {{style}}"
+      name="user"
+      [(ngModel)]="email"
+      required
+    />
+    <p *ngIf="style !== ''" class="text-red-400"><i>{{this.texts?.loginError}}</i></p>
+    <div class="flex border-b-2 outline-none p-5 {{style}}">
+      <input
+        type="{{ this.visible ? 'text' : 'password' }}"
+        id="UserPassword"
+        placeholder="{{this.texts?.password}}"
+        class="outline-none"
+        [(ngModel)]="password"
+        required
+      />
+      <i
+        class="bi cursor-pointer"
+        [ngClass]="{ 'bi-eye-slash': this.visible, 'bi-eye': !this.visible }"
+        (click)="changePasswordVisibility()"
+      ></i>
+    </div>
+    <div class="flex justify-center gap-3">
+      <button
+        class="bg-blue-500 p-5 text-white rounded-lg"
+        (click)="checkData(this.email, this.password)"
+      >
+      {{this.texts?.logIn}}
+      </button>
+      <button
+        class="bg-gray-500 p-5 text-white rounded-lg"
+        (click)="changeHaveAccount()"
+      >
+      {{this.texts?.signIn}}
+      </button>
+    </div>
+  </div>
+</div>

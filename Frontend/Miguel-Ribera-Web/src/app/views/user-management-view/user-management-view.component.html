@@ -1,0 +1,60 @@
+<div *ngIf="user === 'admin'" class="flex justify-center items-center" style="height: 75vh">
+  <div class="flex justify-center items-center border shadow rounded-xl p-5">
+    <table class="text-center border rounded p-5">
+      <tr>
+        <th class="border border-black px-5">Email</th>
+        <th class="border border-black px-5">DNI</th>
+        <th class="border border-black px-5">Password</th>
+        <th class="border border-black px-5">Rides</th>
+        <th class="border border-black px-5">Actions</th>
+      </tr>
+
+      <tr *ngFor="let user of users">
+        <ng-container *ngIf="editing !== user?.id; else editMode">
+          <td class="border">{{ user?.email }}</td>
+          <td class="border">{{ user?.dni }}</td>
+          <td class="border">{{ user?.password }}</td>
+          <td class="border">{{ user?.rides }}</td>
+          <td class="border">
+            <div class="flex p-2 justify-around">
+              <button
+                class="p-2 bg-blue-500 rounded text-white"
+                (click)="editing = user?.id"
+              >
+                <i class="bi bi-pencil"></i>
+              </button>
+              <button class="p-2 bg-red-500 rounded text-white" (click)="deleteUser(user?.id)">
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </td>
+        </ng-container>
+        <ng-template #editMode>
+          <td class="border"><input [(ngModel)]="user.name"/></td>
+          <td class="border"><input [(ngModel)]="user.dni" /></td>
+          <td class="border"><input [(ngModel)]="user.password" /></td>
+          <td class="border"><input [(ngModel)]="user.rides" /></td>
+          <td class="border">
+            <div class="flex p-2 justify-around">
+              <button
+                class="p-2 bg-green-500 rounded text-white"
+                (click)="saveUser(user)"
+              >
+                <i class="bi bi-check"></i>
+              </button>
+              <button
+                class="p-2 bg-red-500 rounded text-white"
+                (click)="editing = ''"
+              >
+                <i class="bi bi-x"></i>
+              </button>
+            </div>
+          </td>
+        </ng-template>
+      </tr>
+      
+    </table>
+  </div>
+</div>
+
+<app-unauthorized *ngIf="user !== 'admin'" />

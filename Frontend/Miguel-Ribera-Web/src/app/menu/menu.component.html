@@ -1,0 +1,75 @@
+<div
+  class="{{ this.display }} {{
+    this.display === 'block' ? 'absolute' : 'relative'
+  }} w-full z-40"
+>
+  <div class="{{ this.display }} gap-5">
+    <a href="/">
+      <li class="{{ this.itemClasses }}">
+        <i class="bi bi-house mx-1"></i>{{ this.texts?.home }}
+      </li>
+    </a>
+    <a href="/horario">
+      <li class="{{ this.itemClasses }}">
+        <i class="bi bi-clock mx-1"></i>{{ this.texts?.schedule }}
+      </li>
+    </a>
+    <a href="/servicio-privado">
+      <li class="{{ this.itemClasses }}">
+        <i class="bi bi-file-lock mx-1"></i>{{ this.texts?.privateService }}
+      </li>
+    </a>
+    <a href="/sobre-nosotros">
+      <li class="{{ this.itemClasses }}">
+        <i class="bi bi-bus-front mx-1"></i>{{ this.texts?.aboutUs }}
+      </li>
+    </a>
+    <a *ngIf="this.user === ''" href="/login">
+      <li class="{{ this.itemClasses }}">
+        <i class="bi bi-person mx-1"></i>{{ this.texts?.login }}
+      </li>
+    </a>
+    <a *ngIf="this.user !== ''" href="/perfil">
+      <li class="{{ this.itemClasses }}">
+        <i class="bi bi-person mx-1"></i>{{ this.user }}
+      </li>
+    </a>
+    <li
+      *ngIf="this.display == 'block'"
+      class="{{ this.itemClasses }} cursor-pointer"
+      (click)="this.languageButtonClick()"
+    >
+      <i class="fi fi-{{ this.currentFlag }}"></i> {{ this.texts?.language }}
+      <app-language-dropdown
+        [languages]="[
+          { flag: 'es', title: 'Español', value: 'spanish' },
+          { flag: 'gb', title: 'English', value: 'english' },
+          { flag: 'es-ct', title: 'Catalan', value: 'catalan' }
+        ]"
+        [show]="this.showLanguage"
+      />
+    </li>
+
+    <a href="/gestion-usuarios">
+      <li class="{{ itemClasses }}" *ngIf="user === 'admin'">
+        <i class="bi bi-person-gear"></i>
+        {{ texts?.userManagement }}
+      </li>
+    </a>
+  </div>
+  <div *ngIf="this.display != 'block'">
+    <li class="cursor-pointer" (click)="this.languageButtonClick()">
+      <i class="fi fi-{{ this.currentFlag }}"></i> {{ this.texts?.language }}
+    </li>
+    <app-language-dropdown
+      [languages]="[
+        { flag: 'es', title: 'Español', value: 'spanish' },
+        { flag: 'gb', title: 'English', value: 'english' },
+        { flag: 'es-ct', title: 'Catalan', value: 'catalan' }
+      ]"
+      [show]="this.showLanguage"
+      (languageChange)="hideMenu()"
+      customClasses="right-0"
+    />
+  </div>
+</div>

@@ -1,0 +1,89 @@
+<div class="flex shadow-xl border rounded-lg w-fit" (keyup.enter)="checkData()" style="max-height: 75vh;">
+  <div
+    class="flex flex-col items-center justify-center border pt-6 p-10 rounded-l-lg max-w-sm overflow-scroll"
+  >
+    <h3 class="text-4xl text-blue-800 m-0">{{ this.texts?.title }}</h3>
+    <div class="flex flex-col gap-3 my-5">
+      <p *ngIf="errorCode !== 0" class="text-red-400 max-w-1/4">
+        <i>{{ errorMessage }}</i>
+      </p>
+
+      <input
+        type="text"
+        placeholder="{{ this.texts?.email }}"
+        class="border-b-2 outline-none focus:border-black p-5 {{
+          errorCode === 1 ? 'border-red-400' : ''
+        }}"
+        name="user"
+        [(ngModel)]="this.email"
+        required
+      />
+
+      <input
+        type="text"
+        placeholder="{{ this.texts?.dni }}"
+        class="border-b-2 outline-none focus:border-black p-5 {{
+          errorCode === 2 ? 'border-red-400' : ''
+        }}"
+        name="dni"
+        [(ngModel)]="this.dni"
+        required
+      />
+
+      <div
+        class="flex border-b-2 focus:border-black p-5 gap-3 {{
+          errorCode === 3 ? 'border-red-400' : ''
+        }}"
+      >
+        <input
+          type="{{ this.visible ? 'text' : 'password' }}"
+          placeholder="{{ this.texts?.password }}"
+          class="outline-none"
+          [(ngModel)]="password"
+          required
+        />
+        <i
+          class="bi cursor-pointer"
+          [ngClass]="{ 'bi-eye-slash': this.visible, 'bi-eye': !this.visible }"
+          (click)="changePasswordVisibility()"
+        ></i>
+      </div>
+
+      <div
+        class="flex border-b-2 focus:border-black p-5 gap-3 {{
+          errorCode === 3 ? 'border-red-400' : ''
+        }}"
+      >
+        <input
+          type="{{ this.visible ? 'text' : 'password' }}"
+          placeholder="{{ this.texts?.repeatPassword }}"
+          class="outline-none"
+          [(ngModel)]="repeatedPassword"
+          required
+        />
+        <i
+          class="bi cursor-pointer"
+          [ngClass]="{ 'bi-eye-slash': this.visible, 'bi-eye': !this.visible }"
+          (click)="changePasswordVisibility()"
+        ></i>
+      </div>
+    </div>
+    <div class="flex justify-center gap-3">
+      <button
+        class="bg-gray-500 p-5 text-white rounded-lg"
+        (click)="changeHaveAccount()"
+      >
+        {{ this.texts?.logIn }}
+      </button>
+      <button
+        class="bg-blue-500 p-5 text-white rounded-lg"
+        (click)="this.checkData()"
+      >
+        {{ this.texts?.title }}
+      </button>
+    </div>
+  </div>
+  <div class="hidden lg:flex justify-center items-center icon overflow-hidden min-h-full object-cover">
+    <img src="../../../assets/autobus-image.jpg" alt="" class="rounded-r-lg w-full" />
+  </div>
+</div>

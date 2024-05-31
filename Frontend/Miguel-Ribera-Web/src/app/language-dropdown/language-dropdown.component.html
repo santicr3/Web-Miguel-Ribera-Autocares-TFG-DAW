@@ -1,0 +1,10 @@
+<div
+  *ngIf="this.show"
+  class="rounded-xl bg-white text-black absolute overflow-hidden z-50 mr-5 mt-5 {{this.customClasses}}"
+>
+  <ul *ngFor="let item of this.languages" class="gap-5">
+    <li class="p-5 border hover:bg-gray-300" (click)="changeLanguage(item.value)">
+      <button><i class="fi fi-{{ item.flag }}"></i> {{ item.title }}</button>
+    </li>
+  </ul>
+</div>

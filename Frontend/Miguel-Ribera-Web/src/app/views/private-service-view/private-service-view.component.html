@@ -1,0 +1,50 @@
+<form action="" class="m-5 p-12 border-2 rounded-xl shadow">
+  <div class="flex flex-col mb-5">
+    <label for="name">{{this.texts?.fullName}}</label>
+    <input
+      type="text"
+      placeholder="{{this.texts?.fullName}}"
+      class="border-b-2 outline-none focus:border-black p-5"
+      name="user"
+    />
+  </div>
+  <div class="flex flex-col mb-5">
+    <label for="name">{{this.texts?.email}}</label>
+    <input
+      type="text"
+      placeholder="{{this.texts?.email}}"
+      class="border-b-2 outline-none focus:border-black p-5"
+      name="user"
+    />
+  </div>
+  <div class="flex flex-col mb-5">
+    <label for="name">{{this.texts?.phoneNumber}}</label>
+    <input
+      type="tel"
+      placeholder="{{this.texts?.phoneNumber}}"
+      class="border-b-2 outline-none focus:border-black p-5"
+      name="user"
+    />
+  </div>
+  <div class="flex flex-col mb-5">
+    <label for="name">{{this.texts?.days}}</label>
+    <input
+      type="number"
+      placeholder="{{this.texts?.days}}"
+      class="border-b-2 outline-none focus:border-black p-5"
+      name="user"
+    />
+  </div>
+
+  <div class="flex flex-col mb-5">
+    <label for="name">{{this.texts?.description}}</label>
+    <textarea
+      placeholder="{{this.texts?.description}}"
+      class="border-2 outline-none focus:border-black p-5 rounded-xl"
+      rows="5"
+      name="user"
+    ></textarea>
+  </div>
+
+  <button class="bg-slate-900 text-white p-5 rounded-xl mt-5">{{this.texts?.send}}</button>
+</form>
